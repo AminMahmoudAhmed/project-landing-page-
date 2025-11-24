@@ -1,0 +1,483 @@
+ .banner {
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(to right, rgba(120,0,0,0.4), rgba(0,0,0,0.6)),
+                    url("/images/cb-h5\ 1.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 90px;
+        color: white;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .banner::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        height: 20px;
+        background: white;
+        clip-path: polygon(0 50%, 20% 100%, 40% 0, 60% 100%, 80% 0, 100% 50%);
+    }
+
+
+  p{
+    color: #0c0a09 !important;
+}
+
+
+:root{
+  --accent: #e53935;
+  --muted: #777;
+  --border: #ececec;
+}
+
+
+
+
+.section4{
+background: #faf4f4;
+}
+
+
+.hero2 {
+  direction: rtl;
+  display: flex;
+    justify-content: flex-start;  
+  align-items: center;
+  gap: 550px;
+  padding: 20px 20px;
+
+  .text {
+   margin-inline-start: 60px; 
+
+    h1 {
+      color: #d82b2b;
+      font-size: 32px;
+      margin: 0 0 6px 0;
+    }
+
+    p {
+      color: #777;
+      font-size: 15px;
+      margin: 0;
+    }
+  }
+
+  
+  .actions2 {
+    display: flex;
+    border: 1px solid #e05252;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 8px 8px;
+    .btn{
+      padding: 10px 20px;
+      min-width: 150px;
+      border: none;
+      color: #111111;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .outline2 {
+      color: #555;
+      // border: 1px solid #ddd;
+    }
+
+    .primary2 {
+      background: linear-gradient(#e63939, #c81010);
+      color: #fff;
+      border-radius: 4px;
+      gap: 8px;
+      padding: 5px 5px;
+     
+}
+  }
+
+  
+}
+
+  .cards {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(330px, 1fr));
+  gap: 18px;
+  padding: 0 10px; /* تخفيف من الطرفين */
+  
+}
+
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+
+    .text {
+      max-width: 100%;
+    }
+
+    .actions {
+      width: 100%;
+      flex-direction: column;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.section4{
+    background: #ffffff;
+}
+
+.tender-card {
+  width: 450px;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  // direction: rtl;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  
+  
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #777;
+
+    .label { font-weight: 500; }
+    .number { color: #d12f2f; font-weight: 700; }
+    .icon { font-size: 14px; opacity: 0.7; }
+  }
+
+  .card-img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-body {
+    text-align: center;
+    padding: 18px 14px 24px;
+
+    .title {
+      font-size: 20px;
+      margin: 0 0 8px;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .desc {
+      margin: 0 0 18px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #777;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      .btn {
+        flex: 1;
+        padding: 10px 0;
+        border-radius: 8px;
+        font-size: 13px;
+        cursor: pointer;
+        
+      }
+
+      .outline,
+.outline:focus,
+.outline:active,
+.outline:hover {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #c81010;
+  font-size: 18px;
+}
+
+
+      .primary {
+        background: #d12f2f;
+        color: white;
+        border: none;
+        font-weight: 600;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 10px;
+  }
+}
+
+/* تابلت */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 12px;
+  }
+}
+
+/* لابتوب */
+@media (max-width: 1250px) {
+  .cards {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+.icon1{
+
+  // border: none;
+  color: rgb(235, 9, 9);
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px auto 40px;
+  border-radius: 8px;
+ border: 1px solid rgb(235, 9, 9);
+  cursor: pointer;
+  font-weight: 600;
+    display: block;
+  
+}
+.button{
+  padding: 20px 0;
+}
+.stats-section {
+  width: 100%;
+  background: 
+    linear-gradient(to right, rgba(120,0,0,0.7), rgba(0,0,0,0.6)),
+    url('/images/pure.svg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+
+  
+}
+
+
+.stats-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  color: white;
+  text-align: center;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-box .icon {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d8c7c7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.stat-box .icon img {
+  width: 26px;
+  opacity: 0.85;
+}
+
+.stat-box h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stat-box p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 1.6;
+  color: #fff !important;
+}
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+.stats-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px 80px;
+  color: white;
+  text-align: center;
+}
+
+
+.breadcrumb {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  margin-inline-start: 115px;
+    padding: 10px 0;
+}
+
+.breadcrumb a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.breadcrumb a.active {
+  color: #d12f2f;
+  font-weight: 600;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .arrow {
+  color: #555;
+  font-size: 22px;
+}
+
+.red-line {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1400px;
+    width: 170%;
+    height: 3px; 
+    background: rgb(199, 39, 39);
+  }
+}
+
+
+::ng-deep .custom-paginator.p-paginator {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+::ng-deep .custom-paginator .p-dropdown {
+    border-radius: 8px !important;
+    height: 40px;
+    border: 1px solid #d92c2c !important;
+
+}
+
+::ng-deep .custom-paginator .p-dropdown .p-dropdown-label {
+    line-height: 40px;
+}
+
+::ng-deep .custom-paginator .p-dropdown .p-dropdown-trigger {
+    color: #d92c2c !important;
+}
+
+
+::ng-deep .custom-paginator .p-paginator-page {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+::ng-deep .custom-paginator .p-paginator-page.p-highlight {
+    background: #d92c2c !important;
+    color: white !important;
+}
+
+/* الأسهم */
+::ng-deep .custom-paginator .p-paginator-prev,
+::ng-deep .custom-paginator .p-paginator-next,
+::ng-deep .custom-paginator .p-paginator-first,
+::ng-deep .custom-paginator .p-paginator-last {
+    color: #d92c2c !important;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::ng-deep .custom-paginator .p-paginator-ellipsis {
+    font-size: 18px;
+    color: #d30505;
+}
+.paginator-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+}
+::ng-deep .custom-paginator .p-dropdown {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+::ng-deep .custom-paginator .p-dropdown-label {
+    padding-right: 4px !important; /* قرب الرقم للسهم */
+}
+
+::ng-deep .custom-paginator .p-dropdown-trigger {
+    margin-left: 2px !important;   /* قرب السهم للرقم */
+    margin-right: 0 !important;
+}
+
+
+::ng-deep --p-paginator-nav-button-selected-color{
+    --p-paginator-color: #d92c2c !important;
+}
