@@ -11,17 +11,39 @@ import { RouterLink } from "@angular/router";
 export class HomeComponent {
 
 
-    customOptions: OwlOptions = {
+
+
+
+
+customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     autoplay: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: false,
     navSpeed: 700,
     navText: ['', ''],
-   items: 1,
-    nav: false
-  }
+    nav: false,
 
+    responsive: {
+      0: {       // 📱 موبايل
+        items: 1
+      },
+      576: {     // موبايل كبير
+        items: 1
+      },
+      768: {     // 🧩 تابلت
+        items: 1
+      },
+      992: {     // 💻 لابتوب
+        items: 1
+      }
+    }
+  };
+
+
+
+
+  
 }

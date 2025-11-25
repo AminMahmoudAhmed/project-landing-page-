@@ -170,82 +170,6 @@ footer {
 }
 
 
-@media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "right"
-      "left";
-    text-align: center;
-  }
-
-  .divider {
-    display: none;
-  }
-
-  .footer-logos {
-    justify-content: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .footer-links {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 1200px) {
-  .footer-info {
-    transform: translateX(0) !important;
-  }
-
-  .footer-container {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "right"
-      "left";
-    text-align: center;
-    direction: rtl !important;
-  }
-
-  .divider {
-    display: none;
-  }
-
-  .footer-contact,
-  .footer-info {
-    align-items: center !important;
-    text-align: center;
-  }
-
-  .contact-list li {
-    text-align: center;
-  }
-
-  .footer-logos {
-    justify-content: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 25px;
-    text-align: center;
-  }
-
-  .footer-links {
-    justify-content: center;
-  }
-}
-
 
 @media (max-width: 600px) {
   .footer-logos img {
@@ -303,5 +227,56 @@ footer {
 
   .footer-social {
     gap: 12px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "right"
+      "left";
+    text-align: center;
+    direction: rtl !important;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .footer-contact,
+  .footer-info {
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .contact-list li {
+    text-align: center;
+  }
+
+  .footer-logos {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .footer-info {
+    transform: translateX(0) !important;
+  }
+
+  .footer-container {
+    gap: 20px;
   }
 }
